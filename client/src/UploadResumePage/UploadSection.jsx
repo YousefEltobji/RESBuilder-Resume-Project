@@ -5,7 +5,7 @@ import OpenAI from 'openai';
 
 const UploadSection = () => {
     const navigate = useNavigate();
-    const apiKey = 'sk-proj-VG4ZeOcnj1bHDC1U42e4T3BlbkFJGC1g1Zt32y84eb9Ngspl';
+    const apiKey = import.meta.env.VITE_API_KEY;
     const [file, setFile] = useState(null);
     const [fileText, setFileText] = useState('');
     const [isLoading, setIsLoading] = useState(false);
@@ -33,7 +33,7 @@ const UploadSection = () => {
             console.log("No resume text available.");
             return;
         }
-    
+
         try {
             setIsLoading(true);
             const response = await openai.chat.completions.create({
@@ -54,7 +54,7 @@ const UploadSection = () => {
                     }
                 ]
             });
-    
+
             const feedback = response.choices[0].message.content;
             console.log(feedback);
             const scoreMatch = feedback.match(/Overall Score:\s*(\d+)/);
@@ -68,7 +68,7 @@ const UploadSection = () => {
             console.error('Failed to fetch feedback from OpenAI:', error);
         }
     };
-    
+
     if (isLoading) {
         return (
             <div className="upload-section-container">
@@ -104,9 +104,9 @@ const UploadSection = () => {
                 body: formData
             });
             const data = await response.text();
-             setFileText(data);
-    
-          
+            setFileText(data);
+
+
         } catch (error) {
             setUnexpectedError(true);
             console.error("Error uploading file:", error);

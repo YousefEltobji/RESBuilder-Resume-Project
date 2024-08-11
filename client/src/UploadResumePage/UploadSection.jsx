@@ -99,7 +99,7 @@ const UploadSection = () => {
         formData.append('file', file);
 
         try {
-            const response = await fetch('https://yousefsproject.onrender.com/upload', {
+            const response = await fetch('https://resbuilder-resume-project.onrender.com/upload', {
                 method: 'POST',
                 body: formData
             });

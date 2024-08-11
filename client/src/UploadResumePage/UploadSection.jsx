@@ -9,9 +9,14 @@ const UploadSection = () => {
     const [file, setFile] = useState(null);
     const [fileText, setFileText] = useState('');
     const [isLoading, setIsLoading] = useState(false);
-    //const [uploadingResume, setUploadingResume] = useState(false);
     const [unexpectedError, setUnexpectedError] = useState(false);
 
+
+    useEffect(() => {
+        if (fileText) {
+            handleGetFeedback();
+        }
+    }, [fileText]);
 
     useEffect(() => {
         if (fileText) {
@@ -105,8 +110,7 @@ const UploadSection = () => {
             });
             const data = await response.text();
             setFileText(data);
-
-
+            handleGetFeedback();
         } catch (error) {
             setUnexpectedError(true);
             console.error("Error uploading file:", error);

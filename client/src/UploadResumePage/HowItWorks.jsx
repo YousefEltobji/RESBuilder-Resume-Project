@@ -19,7 +19,7 @@ const HowItWorks = () => {
                     <div className='howitworks-step'>
                         <h2>Step 2</h2>
                         <h3>Receive AI-Driven Feedback</h3>
-                        <p>The application analyzes the resume using advanced artificial intelligence algorithms.</p>
+                        <p>The application analyzes the resume using openAIs api.</p>
                         <p>Users receive detailed feedback on various aspects of their resume, including structure, content, grammar, and presentation.</p>
                     </div>
                     <div className='right-arrow'>

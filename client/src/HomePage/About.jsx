@@ -8,11 +8,11 @@ const About = () => {
             <div className="about-content">
                 <h1>About RESBuilder</h1>
                 <h2>Empowering Your Career Aspirations</h2>
-                <p>RESBuilder is an innovative web application designed to elevate your job application process. In today's competitive job market, having a standout resume can make all the difference. That's where RESBuilder steps in—offering a sophisticated platform powered by advanced AI technology to analyze and enhance your resume.</p>
+                <p>RESBuilder is an innovative web application designed to elevate your job application process. In today's competitive job market, having a standout resume can make all the difference. That's where RESBuilder steps in—offering a platform powered by openAIs API to analyze and enhance your resume.</p>
                 <h2>What We Do</h2>
                 <p>At RESBuilder, we understand the challenges of crafting a resume that catches the eye of recruiters. Our application provides a user-friendly interface where you can upload your resume and receive instant, personalized feedback. This feedback is not just generic advice; it's tailored to your specific career field and experience level, ensuring relevance and impact.</p>
                 <h2>Our Features</h2>
-                <p><strong>AI-Driven Insights:</strong> Harness the power of artificial intelligence to get detailed critiques and suggestions for improvement on various aspects of your resume, from structure and content to language and keyword optimization.</p>
+                <p><strong>AI-Driven Insights:</strong> Harness the power of openAIs API to get detailed critiques and suggestions for improvement on various aspects of your resume, from structure and content to language and keyword optimization.</p>
                 {/* <p>Real-Time Modifications: See how modifications affect your resume in real-time, allowing you to experiment with different phrasings and formats to find what best showcases your skills and achievements.</p> */}
                 <p><strong>Industry-Specific Feedback:</strong> Whether you're a seasoned professional or a fresh graduate, get feedback that understands the nuances of your industry.</p>
                 <p><strong>Privacy and Security:</strong> We prioritize your privacy and security, ensuring your data is protected throughout your experience with RESBuilder.</p>

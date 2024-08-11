@@ -1,4 +1,7 @@
 .herosection-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     position: absolute;
     top: 110px;
     left: 0;
@@ -6,8 +9,16 @@
     height: 600px;
     background-color: #081430;
     box-shadow: 0px 3px 0 #0000001a
+    
 }
-
+.herosection-image {
+    width: 740px;
+    aspect-ratio: auto 740 / 419;
+    height: 419px;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+    margin: 85px;
+}
 .herosection-content {
     display: flex;
     flex-direction: column;
@@ -54,3 +65,4 @@
     margin-bottom: 10px;
     transform: scale(1.05);
 }
+

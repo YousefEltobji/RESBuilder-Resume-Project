@@ -123,7 +123,7 @@ const UploadSection = () => {
         <div className="upload-section-container">
             <div className="upload-section-content">
                 <h1>Upload Your Resume</h1>
-                <p>Get started by uploading your resume. Our AI-powered tool will analyze your resume and provide you with tailored suggestions for improvement.</p>
+                <p>Get started by uploading your resume. Our AI-powered tool will analyze your resume and provide you with tailored suggestions for improvement.<strong> Please give the server time to launch. The server could take upto a minute to process.</strong></p>
                 <label htmlFor="resume-upload">Choose a file (PDF Only)</label>
                 <input type="file" id="resume-upload" name="resume-upload" accept=".pdf" onChange={handleFileChange} />
                 <button className="upload-button" onClick={handleUploadClick}>Upload</button>
